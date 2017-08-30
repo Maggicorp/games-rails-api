@@ -20,6 +20,7 @@ gem "sprockets", ">= 3.0.0"
 gem "suspenders"
 gem "title"
 gem "uglifier"
+gem "active_model_serializers", "0.8.3"
 
 group :development do
   gem "listen"
