@@ -22,6 +22,10 @@ end
 
   def index
     teams = Team.all
+    hashNew = []
+    teams.each { |team|
+      hashNew.push({id: team.id, name: team.name})
+    }
     # teams.each do |team|
     #   team.competiting_teams.each do |cteam|
     #     score = cteam.score
@@ -37,7 +41,7 @@ end
     #     end
     #   end
     # end
-    render json: teams
+    render json: hashNew
   end
 
   def show
